@@ -270,6 +270,45 @@ header {
 	filter: brightness(0.7) contrast(2.8);
 }
 
+.product-display {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1em;
+	margin: 0 auto;
+}
+
+.product-container {
+	padding: 20px;
+	text-align: center;
+	width: 100%;
+	font-size: 2em;
+}
+
+.resize-img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 5px;
+	border: 2px solid transparent;
+	transition: all 0.2s ease-in-out;
+	margin-bottom: 2em;
+}
+
+.resize-img:hover {
+	border-color: var(--orange);
+	transform: scale(1.1);
+}
+
+.added-to-cart {
+	font-size: 1.1em;
+	background-color: var(--dark-grayish-blue);
+	color: #fff;
+	border-radius: 5px;
+	padding: 0.2em 1em;
+}
+
+.added-to-cart:hover {
+	cursor: pointer;
+}
 .attribution {
 	font-size: 11px;
 	text-align: center;
