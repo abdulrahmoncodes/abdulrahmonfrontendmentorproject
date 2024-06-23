@@ -97,6 +97,14 @@ header {
 	filter: brightness(0.7) contrast(2.8);
 }
 
+.cart-item {
+	color: #fff;
+	background-color: var(--orange);
+	padding: 0.15em 0.7em;
+	border-radius: 40%;
+	text-align: center;
+}
+
 .image-avatar {
 	width: 40%;
 	transition: transform 0.3s ease;
