@@ -55,4 +55,11 @@ const products = [
 		price: 100,
 		image: "/images/image-product-1.jpg",
 	},
+	{
+		id: 9,
+		name: "Airmax Force",
+		quantity: 8,
+		price: 160,
+		image: "/images/image-product-9.jpg",
+	},
 ];

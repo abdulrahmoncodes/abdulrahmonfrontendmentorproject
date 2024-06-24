@@ -24,7 +24,7 @@ products.forEach((product) => {
 	html += `<div class="product-container">
 	<img class="resize-img" src="${product.image}" alt="" />
 	<div class="product-name">${product.name}</div>
-	<div class="product-quantity_container">
+	<div class="js-product-${product.id}">
 		<select class="product-selected">
 			<option selected value="1">1</option>
 			<option value="2">2</option>
@@ -40,3 +40,9 @@ products.forEach((product) => {
 });
 
 productDisplay.innerHTML = html;
+
+products.forEach((product) => {
+	let productId = console.log(
+		document.querySelector(`.js-product-${productId}`).value
+	);
+});
