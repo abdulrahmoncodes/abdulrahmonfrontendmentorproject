@@ -87,6 +87,9 @@ header {
 	gap: 0.5rem;
 }
 
+.cart-details:nth-child(2) {
+	position: relative;
+}
 .cart-icon {
 	margin-right: 5rem;
 	transition: filter 0.15s ease-in;
@@ -99,10 +102,14 @@ header {
 
 .cart-item {
 	color: #fff;
+	position: absolute;
 	background-color: var(--orange);
-	padding: 0.15em 0.7em;
+	padding: 0.13em 0.6em;
 	border-radius: 40%;
+	left: 8px;
+	top: 3px;
 	text-align: center;
+	visibility: hidden;
 }
 
 .image-avatar {
@@ -308,6 +315,25 @@ header {
 
 .added-to-cart:hover {
 	cursor: pointer;
+}
+
+.added {
+	width: 60%;
+	text-align: center;
+	margin: 0 auto;
+	display: none;
+}
+
+.added-visible {
+	display: block;
+}
+
+.checkmark-img {
+	width: 10%;
+	height: 20%;
+}
+.product-price_container {
+	margin-bottom: 1em;
 }
 .attribution {
 	font-size: 11px;
