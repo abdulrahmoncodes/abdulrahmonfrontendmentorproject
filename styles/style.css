@@ -104,12 +104,16 @@ header {
 	color: #fff;
 	position: absolute;
 	background-color: var(--orange);
-	padding: 0.13em 0.6em;
+	padding: 0.13em 0.4em;
 	border-radius: 40%;
 	left: 8px;
 	top: 3px;
 	text-align: center;
 	visibility: hidden;
+}
+
+.cart-visible {
+	visibility: visible;
 }
 
 .image-avatar {
@@ -321,11 +325,12 @@ header {
 	width: 60%;
 	text-align: center;
 	margin: 0 auto;
-	display: none;
+	font-size: 0.8em;
+	visibility: hidden;
 }
 
 .added-visible {
-	display: block;
+	visibility: visible;
 }
 
 .checkmark-img {
