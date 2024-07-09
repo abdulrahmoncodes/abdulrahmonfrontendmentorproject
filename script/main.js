@@ -1,3 +1,6 @@
+import { cart } from "../data/cart.js";
+import { products } from "../data/product.js";
+
 let cartQuantity = document.querySelector(".cart-item");
 const decreaseQuantity = document.querySelector(".minus");
 const increaseQuantity = document.querySelector(".plus");
