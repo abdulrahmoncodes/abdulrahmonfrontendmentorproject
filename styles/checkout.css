@@ -1,0 +1,28 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	padding: 2rem 10rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.checkout-header {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.checkout-header p {
+	font-size: 2.1rem;
+}
+
+.delivery-product {
+	max-width: 100%;
+	height: 15rem;
+}
