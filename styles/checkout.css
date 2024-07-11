@@ -26,3 +26,28 @@ html {
 	max-width: 100%;
 	height: 15rem;
 }
+
+.delivery-container {
+	margin-top: 15rem;
+}
+.delivery-container h3 {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+
+.delivery-details {
+	border: 1px solid lightgray;
+	border-radius: 4px;
+	padding: 2rem;
+	max-width: max-content;
+}
+
+.delivery-details p {
+	font-size: 1.7rem;
+	color: green;
+	font-weight: 500;
+}
+
+aside {
+	float: right;
+}
