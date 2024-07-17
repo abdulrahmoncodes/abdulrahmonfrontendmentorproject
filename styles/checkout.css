@@ -8,8 +8,9 @@
 
 html {
 	font-size: 62.5%;
-	padding: 2rem 10rem;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	padding: 1.5rem 10rem;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .checkout-header {
@@ -23,31 +24,166 @@ html {
 }
 
 .delivery-product {
-	max-width: 100%;
+	min-width: 50%;
 	height: 15rem;
 }
 
 .delivery-container {
-	margin-top: 15rem;
+	margin-top: 10rem;
+	display: flex;
+	gap: 2rem;
 }
-.delivery-container h3 {
+
+.delivery-container div h3 {
 	font-size: 2rem;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
+	font-weight: bold;
 }
 
 .delivery-details {
 	border: 1px solid lightgray;
 	border-radius: 4px;
-	padding: 2rem;
+	padding: 3rem 10rem 3rem 2rem;
 	max-width: max-content;
+	margin-bottom: 1rem;
 }
 
-.delivery-details p {
-	font-size: 1.7rem;
+.delivery-date {
+	font-size: 1.6rem;
 	color: green;
+	margin-bottom: 1rem;
+	font-weight: 600;
+}
+
+.delivery-details__product {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10rem;
+}
+
+.delivery-details__product .flex {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+.product-details p {
+	padding-bottom: 1rem;
+	font-size: 1.7rem;
 	font-weight: 500;
 }
 
+.product-price {
+	color: red;
+}
+
+.product-quantity {
+	font-size: 1.4rem;
+}
+
+.product-quantity span a {
+	text-decoration: none;
+	color: blueviolet;
+}
 aside {
 	float: right;
+}
+
+.delivery-options {
+	font-size: 1.7rem;
+}
+
+.delivery-options p {
+	font-size: 1.8rem;
+	margin-bottom: 1rem;
+}
+
+.delivery-options--radio {
+	display: flex;
+	gap: 1rem;
+	cursor: pointer;
+	margin-bottom: 0.3rem;
+}
+
+.delivery-options-price {
+	margin-left: 2rem;
+	color: gray;
+	font-size: 1.5rem;
+	margin-bottom: 0.7rem;
+}
+
+.delivery-options_date {
+	color: green;
+}
+
+.payment-summary {
+	margin-top: 3.5rem;
+	border: 1px solid lightgray;
+	padding: 2rem 4rem;
+	border-radius: 2px;
+	max-height: 20%;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+.payment-summary-title {
+	font-size: 1.8rem;
+	font-weight: 700;
+	margin-bottom: 1.2rem;
+}
+
+.payment-summary-row {
+	font-size: 1.4rem;
+	display: flex;
+	justify-content: space-between;
+	gap: 5rem;
+}
+
+.payment-summary-row-subtotal {
+	font-size: 1.4rem;
+	display: flex;
+	justify-content: space-between;
+	gap: 5rem;
+}
+
+.payment-summary-total {
+	font-size: 1.4rem;
+	display: flex;
+	justify-content: space-between;
+	gap: 5rem;
+}
+
+.gray-border-1 {
+	align-self: flex-end;
+	width: 4.8rem;
+	height: 0.04em;
+	background-color: lightgray;
+}
+
+.gray-border-2 {
+	float: right;
+	width: 100%;
+	height: 0.04em;
+	background-color: lightgray;
+}
+
+.place-order-btn {
+	background-color: rgb(255, 216, 20);
+	border-radius: 8px;
+	padding-top: 12px;
+	cursor: pointer;
+	padding-bottom: 12px;
+	margin-top: 11px;
+	margin-bottom: 15px;
+	box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+	border: 1px solid rgb(252, 210, 0);
+}
+
+.place-order-btn:hover {
+	background-color: rgb(252, 210, 0);
+	box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
 }

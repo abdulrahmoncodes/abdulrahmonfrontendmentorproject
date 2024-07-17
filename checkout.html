@@ -11,98 +11,128 @@
 			<section class="checkout-header">
 				<a href="index.html"><img src="images/logo.svg" alt="" /></a>
 				<p>Checkout (<a href="index.html">3 items</a>)</p>
-				<img src="images/checkout-lock-icon.png" alt="" />
+				<img src="images/checkout-lock-icon.png" alt="checkout-lock-icon" />
 			</section>
 
 			<section class="delivery-container">
-				<h3>Review your order</h3>
+				<div>
+					<h3>Review your order</h3>
+					<div class="delivery-details">
+						<p class="delivery-date">Delivery date: Monday, June 24</p>
+						<div class="delivery-details__product">
+							<div class="flex">
+								<div class="product-container">
+									<img
+										src="/images/image-product-2.jpg"
+										alt="product"
+										class="delivery-product" />
+								</div>
+								<div class="product-details">
+									<p>Nice Air force</p>
+									<p class="product-price">$10.53</p>
+									<div class="product-quantity">
+										<span
+											>Quantity:2
+											<span> <a href="checkout.html">Update</a> </span>
+											<span><a href="checkout.html">Delete</a> </span>
+										</span>
+									</div>
+								</div>
+							</div>
 
-				<div class="delivery-details">
-					<p>Delivery date: Monday, June 24</p>
-					<div class="delivery-details__product">
-						<img
-							src="/images/image-product-2.jpg"
-							alt="product"
-							class="delivery-product" />
-						<p>Nice Air force</p>
-						<p class="product-price">$10.53</p>
-						<div class="product-quantity">
-							<span
-								>Quantity:2
-								<span>Update</span>
-								<span>Delete</span>
-							</span>
+							<div class="delivery-options">
+								<p>Choose delivery option:</p>
+								<div class="delivery-options--radio">
+									<input type="radio" name="delivery-1" />
+									<div class="delivery-options_date">Monday, June 24</div>
+								</div>
+								<div class="delivery-options-price">FREE Shipping</div>
+								<div class="delivery-options--radio">
+									<input type="radio" name="delivery-1" />
+									<div class="delivery-options_date">Friday, June 27</div>
+								</div>
+								<div class="delivery-options-price">$9.99 - Shipping</div>
+								<div class="delivery-options--radio">
+									<input type="radio" name="delivery-1" />
+									<div class="delivery-options_date">Wednesday, July 14</div>
+								</div>
+								<div class="delivery-options-price">$4.78 - Shipping</div>
+							</div>
 						</div>
-						<div class="delivery-options">
-							<p>Choose delivery option:</p>
-							<input type="radio" name="delivery-1" />
-							<div class="delivery-options_date">Monday, June 24</div>
-							<div class="delivery-options-price">FREE Shipping</div>
-							<input type="radio" name="delivery-1" />
-							<div class="delivery-options_date">Friday, June 27</div>
-							<div class="delivery-options-price">$9.99 - Shipping</div>
-							<input type="radio" name="delivery-1" />
-							<div class="delivery-options_date">Wednesday, July 14</div>
-							<div class="delivery-options-price">$4.78 - Shipping</div>
+					</div>
+
+					<div class="delivery-details">
+						<p class="delivery-date">Delivery date: Monday, June 24</p>
+						<div class="delivery-details__product">
+							<div class="flex">
+								<div class="product-container">
+									<img
+										src="/images/image-product-4.jpg"
+										alt="product"
+										class="delivery-product" />
+								</div>
+								<div class="product-details">
+									<p>Nice Air force</p>
+									<p class="product-price">$7.98</p>
+									<div class="product-quantity">
+										<span
+											>Quantity:1
+											<span><a href="checkout.html">Update</a></span>
+											<span><a href="checkout.html">Details</a></span>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="delivery-options">
+								<p>Choose delivery option:</p>
+
+								<div class="delivery-options--radio">
+									<input type="radio" name="delivery-1" />
+									<div class="delivery-options_date">Tuesday, April 12</div>
+								</div>
+
+								<div class="delivery-options-price">FREE Shipping</div>
+								<div class="delivery-options--radio">
+									<input type="radio" name="delivery-1" />
+									<div class="delivery-options_date">Thursday, March 24</div>
+								</div>
+								<div class="delivery-options-price">$4.44 - Shipping</div>
+								<div class="delivery-options--radio">
+									<input type="radio" name="delivery-1" />
+									<div class="delivery-options_date">Wednesday, July 14</div>
+								</div>
+								<div class="delivery-options-price">$9.56 - Shipping</div>
+							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="delivery-details">
-					<p>Delivery date: Monday, June 24</p>
-					<div class="delivery-details__product">
-						<img
-							src="/images/image-product-4.jpg"
-							alt="product"
-							class="delivery-product" />
-						<p>Nice Air force</p>
-						<p class="product-price">$7.98</p>
-						<div class="product-quantity">
-							<span
-								>Quantity:1
-								<span>Update</span>
-								<span>Delete</span>
-							</span>
-						</div>
-						<div class="delivery-options">
-							<p>Choose delivery option:</p>
-							<input type="radio" name="delivery-1" />
-							<div class="delivery-options_date">Tuesday, April 12</div>
-							<div class="delivery-options-price">FREE Shipping</div>
-							<input type="radio" name="delivery-1" />
-							<div class="delivery-options_date">Thursday, March 24</div>
-							<div class="delivery-options-price">$4.44 - Shipping</div>
-							<input type="radio" name="delivery-1" />
-							<div class="delivery-options_date">Wednesday, July 14</div>
-							<div class="delivery-options-price">$9.56 - Shipping</div>
-						</div>
-					</div>
-				</div>
-
-				<aside>
+				<div class="payment-summary">
 					<div class="payment-summary-title">Order Summary</div>
 					<div class="payment-summary-row">
 						<p>Items (3):</p>
-						<p>$33.54</p>
+						<p class="payment-summary-money">$33.54</p>
 					</div>
 					<div class="payment-summary-row">
 						<p>Shipping & handling:</p>
-						<p>$3.46</p>
+						<p class="payment-summary-money">$3.46</p>
 					</div>
+					<div class="gray-border-1"></div>
 					<div class="payment-summary-row-subtotal">
 						<p>Total before tax:</p>
-						<p>$37.00</p>
+						<p class="payment-summary-money">$37.00</p>
 					</div>
 					<div class="payment-summary-row">
 						<p>Estimated tax (10%):</p>
-						<p>$2.26</p>
+						<p class="payment-summary-money">$2.26</p>
 					</div>
+					<div class="gray-border-2"></div>
 					<div class="payment-summary-total">
 						<p>Order total:</p>
-						<p>$39.26</p>
+						<p class="payment-summary-money">$39.26</p>
 					</div>
 					<button class="place-order-btn">Place your order</button>
-				</aside>
+				</div>
 			</section>
 		</main>
 	</body>
