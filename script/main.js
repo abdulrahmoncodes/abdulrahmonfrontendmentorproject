@@ -1,5 +1,6 @@
 import { cart } from "../data/cart.js";
 import { products } from "../data/product.js";
+import { formatCurrency } from "./utils/money.js";
 
 let cartQuantity = document.querySelector(".cart-item");
 const decreaseQuantity = document.querySelector(".minus");
@@ -36,7 +37,9 @@ products.forEach((product) => {
 			<option value="5">5</option>
 		</select>
 	</div>
-	<div class="product-price_container">Price : $${product.price.toFixed(2)} </div>
+	<div class="product-price_container">Price : $${formatCurrency(
+		product.price
+	)} </div>
 	<div class='added js-added-to-cart-${product.id}'>
 	<img class='checkmark-img' src='images/checkmark.png'/>
 	Added
