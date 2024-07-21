@@ -15,8 +15,6 @@ cart.forEach((cartItem) => {
 		}
 	});
 
-	console.log(matchingProduct.id);
-
 	cartSummaryHTML += `
 				<div class="delivery-details">
 						<p class="delivery-date">Delivery date: Monday, June 24</p>
@@ -33,7 +31,7 @@ cart.forEach((cartItem) => {
 									<p class="product-price">$${formatCurrency(matchingProduct.price)}</p>
 									<div class="product-quantity">
 										<span
-											>Quantity:${matchingProduct.quantity}
+											>Quantity:${cartItem.quantity}
 											<span> <a href="checkout.html">Update</a> </span>
 											<span><a href="checkout.html">Delete</a> </span>
 										</span>

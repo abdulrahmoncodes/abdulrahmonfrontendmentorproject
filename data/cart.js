@@ -1,4 +1,4 @@
-export const cart = [
+export let cart = [
 	{
 		productId: 5,
 		quantity: 2,
@@ -17,15 +17,19 @@ export function addToCart(productId) {
 	let matchingItem;
 
 	cart.forEach((cartItem) => {
-		console.log(cartItem);
-
-		const selectedProductId = cartItem.productId;
-
-		if (productId === selectedProductId) {
+		if (productId === cartItem.productId) {
 			matchingItem = cartItem;
 		}
 	});
-	console.log(matchingItem);
+
+	if (matchingItem) {
+		matchingItem.quantity += 1;
+	} else {
+		cart.push({
+			productId: productId,
+			quantity: 1,
+		});
+	}
 }
 
 addToCart(2);

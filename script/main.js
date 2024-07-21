@@ -94,7 +94,5 @@ document.querySelectorAll(".js-add-to-cart").forEach((btn) => {
 		const clearMessageId = setTimeout(() => {
 			addedMessage.classList.remove("added-visible");
 		}, 2000);
-
-		console.log(clearMessageId);
 	});
 });
