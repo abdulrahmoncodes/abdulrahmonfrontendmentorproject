@@ -1,4 +1,4 @@
-import { cart } from "../data/cart.js";
+import { cart, addToCart } from "../data/cart.js";
 import { products } from "../data/product.js";
 import { formatCurrency } from "./utils/money.js";
 
@@ -6,7 +6,6 @@ let cartQuantity = document.querySelector(".cart-item");
 const decreaseQuantity = document.querySelector(".minus");
 const increaseQuantity = document.querySelector(".plus");
 let productQuantity = document.querySelector(".zero");
-const addToCart = document.querySelector(".cart-section");
 const cartIcon = document.querySelector(".cart-icon");
 const productDisplay = document.querySelector(".product-display");
 
@@ -63,7 +62,7 @@ let cartProduct = 0;
 document.querySelectorAll(".js-add-to-cart").forEach((btn) => {
 	btn.addEventListener("click", () => {
 		let { productId } = btn.dataset;
-		console.log(productId);
+		addToCart(productId);
 		const productQuantity = document.querySelector(`.js-${productId}`).value;
 
 		let quantity = Number(productQuantity);
